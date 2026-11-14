@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101510">
+<title>FuturBoss</title>
+<style>
+:root{--green:#9be23d;--bg:#101510;--panel:#1b211b;--text:#f5f7f2;--muted:#aab3a6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px Arial,sans-serif}
+header{padding:22px 18px 16px;background:#151b14;border-bottom:1px solid #303a2b}
+.logo{font-size:26px;font-weight:800;color:var(--green)}header p{margin:7px 0 0;color:var(--muted);font-size:14px}
+main{max-width:720px;margin:auto;padding:18px}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+button{border:0;border-radius:14px;padding:16px 12px;font-size:16px;font-weight:700;cursor:pointer}
+.primary{background:var(--green);color:#101510}.secondary{background:#252d23;color:white;border:1px solid #3c4937}
+.section-title{margin:26px 0 12px;font-size:20px}
+.card{background:var(--panel);border:1px solid #303a2b;border-radius:16px;padding:16px;margin-bottom:12px}
+.card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0 0 12px;line-height:1.45}
+.product{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.tag{color:var(--green);font-weight:bold}.small{font-size:13px;color:var(--muted)}
+footer{text-align:center;padding:24px;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<header><div class="logo">⚡ FuturBoss</div><p>Apprends, entreprends et développe tes idées partout dans le monde.</p></header>
+<main>
+<div class="actions">
+<button class="primary" onclick="showInfo('Football','La rubrique football sera développée dans les prochaines étapes.')">⚽ Foot en direct</button>
+<button class="secondary" onclick="showInfo('Business','Découvre des idées, conseils et outils pour entreprendre.')">💼 Business</button>
+</div>
+<h2 class="section-title">🛍️ Produits de la communauté</h2>
+<div class="card product"><div><h3>Ton produit ici</h3><p>Les membres pourront présenter leurs produits et services.</p><span class="tag">Marketplace à venir</span></div><span>📦</span></div>
+<h2 class="section-title">🌍 FuturBoss Premium</h2>
+<div class="card"><h3>Un abonnement pour accéder aux fonctions premium</h3><p>Les abonnements et paiements seront ajoutés après la création et la sécurisation du site.</p><button class="primary" onclick="showInfo('Premium','Les paiements ne sont pas encore activés. Ceci est une maquette.')">Découvrir Premium</button></div>
+<div class="card"><h3>👤 Mon profil</h3><p>La création de comptes utilisateurs sera ajoutée dans une prochaine version.</p><button class="secondary" onclick="showInfo('Profil','Les comptes ne sont pas encore disponibles dans cette maquette.')">Mon compte</button></div>
+</main>
+<footer>FuturBoss — Prototype V1 • Démo seulement, aucun paiement ni compte réel activé.</footer>
+<script>function showInfo(title,message){alert(title+'\n\n'+message)}</script>
+</body></html>
