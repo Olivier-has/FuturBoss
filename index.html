@@ -21,7 +21,7 @@ button{border:0;border-radius:14px;padding:16px 12px;font-size:16px;font-weight:
 .tag{color:var(--green);font-weight:bold}.small{font-size:13px;color:var(--muted)}
 footer{text-align:center;padding:24px;color:var(--muted);font-size:12px}
 </style>
-</head>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>/head>
 <body>
 <header><div class="logo">⚡ FuturBoss</div><p>Apprends, entreprends et développe tes idées partout dans le monde.</p></header>
 <main>
@@ -36,5 +36,14 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:12px}
 <div class="card"><h3>👤 Mon profil</h3><p>La création de comptes utilisateurs sera ajoutée dans une prochaine version.</p><button class="secondary" onclick="showInfo('Profil','Les comptes ne sont pas encore disponibles dans cette maquette.')">Mon compte</button></div>
 </main>
 <footer>FuturBoss — Prototype V1 • Démo seulement, aucun paiement ni compte réel activé.</footer>
-<script>function showInfo(title,message){alert(title+'\n\n'+message)}</script>
+<script>function showInfo(title,message){alert(title+'\n\n'+message)}</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL = "https://poculimoliqnsmjgipgd.supabase.co";
+const SUPABASE_KEY = "sb_publishable_u7--Ym2XpEdu4-RN3s0GpQ_BXO4mBps;
+
+const supabase = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+</script>
 </body></html>
